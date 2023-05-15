@@ -1,0 +1,68 @@
+body{
+   background-image: url(mainbg2.png);
+   background-repeat: no-repeat;
+    height:100% ;
+    width: 100%;
+   animation: MyObj 15s infinite;
+   position: relative;
+   background-blend-mode: overlay;
+}
+img{
+    height: 22vh;
+    width: auto;
+}
+.img2{
+   height: 20vh;
+   width: 15vw;
+}
+.img1:hover{
+    opacity: .5;
+    transition: 1s;
+}
+.img2:hover{
+    opacity: .5;
+    transition: 1s;
+}
+.preview-container{
+    height: 100vh;
+    width: 100%;
+   grid-row: 3;
+   
+   
+}
+.prev-logo{
+    padding-top: 2em;
+    font-family: 'Kanit', sans-serif;
+    font-size: 100px;
+    line-height: 160px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background-image: url(back4.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    cursor: pointer;
+}
+
+
+@keyframes back{
+
+    100%  {background-position: 2000px 0;}
+   
+}
+
+.prev-child2{
+    
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+@keyframes MyObj{
+    10%  {background-color: rgb(40, 40, 40);}
+    25%   {background-color: rgb(120, 120, 120);}
+    50%   {background-color: rgb(114, 113, 113);}
+    75%   {background-color: rgb(54, 54, 54);}
+
+}

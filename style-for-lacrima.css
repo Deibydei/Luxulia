@@ -1,0 +1,212 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #606060;
+    height: 100vh;
+    width: 100%;
+}
+header{
+    height: 15vh;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+   position: fixed;
+   background: linear-gradient(white 80%,#AEEBF2);
+   z-index: 1000;
+}
+.header-banner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.head-contact{
+    margin-top: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+}
+.head-cart{
+    font-size: 2em;
+    margin-top: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+}
+.after-banner{
+  
+  display: none;
+  align-items: center;
+  margin-top: 19px;
+  position: absolute;
+  right: .7em;
+  cursor: pointer;
+}
+h4{
+    display: flex; 
+    align-items: center;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.material-symbols-outlined{
+  padding-right: 6px;
+
+}
+
+.logo{
+   
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    line-height: 2em;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background-image: url(back3.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 10s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes back{
+
+    100%  {background-position: 1000px 0;}
+   
+}
+.header-banner-2{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: .6em;
+
+}
+.header-banner-2 ul{
+   
+    font-size: 14px;
+    position: relative; 
+    display: flex;
+    flex-direction:row;  
+    column-gap:35px; 
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+}
+li:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+main{
+    padding-top: 6%;
+    height: 55%;
+    width: 100%;
+    background-color: rgb(53, 67, 80);
+    
+}
+main .img1{
+    height: 100%;
+    width: 100%;
+    position: cover;
+    
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+
+  
+  .logos {
+    overflow: hidden;
+    margin-top: -1em;
+   padding-top: 5px;
+    background: rgb(0, 0, 0);
+    white-space: nowrap;
+    position: relative;
+
+    
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: slide 9s infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 30px;
+    width:185px ;
+ 
+  }
+section{
+
+ margin-top: 2em;
+  height: 100%;
+
+  width: 100%;
+  position: relative;
+
+}
+.product-section{
+  display: grid;
+  align-self: center;
+  width: fit-content;
+}
+@media all and (max-width: 820px){
+  header{
+    height: 9vh;
+    width: 100%;
+    
+  }
+
+  .header-banner-2{
+    display: none;
+  }
+  .head-cart{
+    display: none;
+  }
+  .logo{
+    margin-left: -17px;
+    font-size: 2em;
+  }
+  .logos{
+    display: none;
+  }
+  .head-contact{
+    display: none;
+  }
+  .after-banner{
+    display: flex;
+    
+  }
+  .tagline{
+    display: none;
+  }
+}
